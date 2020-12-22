@@ -2,6 +2,7 @@ import unittest
 
 from matrices import Matrix
 
+
 class TestMatrixClass(unittest.TestCase):
 
     def test_transpose(self):
@@ -9,7 +10,7 @@ class TestMatrixClass(unittest.TestCase):
                            [3, 4],
                            [1, 1]])
         expected_matrix = [[1, 3, 1], [2, 4, 1]]
-        self.assertEqual(matrix_1.transpose().matrix, expected_matrix)       
+        self.assertEqual(matrix_1.transpose().matrix, expected_matrix)
 
     def test_multiplication(self):
         matrix_1 = Matrix([[1, 2],
@@ -26,15 +27,15 @@ class TestMatrixClass(unittest.TestCase):
         matrix_2 = Matrix([[9, 8], [7, 6]])
         expected_matrix = [[-8, -6], [-4, -2]]
         self.assertEqual(matrix_1.subtraction(
-            matrix_2).matrix, expected_matrix)  
+            matrix_2).matrix, expected_matrix)
 
     def test_add(self):
         matrix_1 = Matrix([[1, 2], [3, 4]])
         matrix_2 = Matrix([[9, 8], [7, 6]])
         expected_matrix = [[10, 10], [10, 10]]
         self.assertEqual(matrix_1.add(
-            matrix_2).matrix, expected_matrix) 
-        
-    
+            matrix_2).matrix, expected_matrix)
+
+
 if __name__ == '__main__':
     unittest.main()

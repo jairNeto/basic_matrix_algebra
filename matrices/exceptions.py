@@ -1,5 +1,6 @@
 '''Exceptions module.'''
 
+
 class DimensionMatrixError(Exception):
     '''
         Exception raised for errors when the matrix has zero columns
@@ -23,7 +24,8 @@ class AddSubtractionMatrixError(Exception):
         do not have the same dimensions
     '''
 
-    def __init__(self, message='The matrices needs to have the same dimension'):
+    def __init__(self,
+                 message='The matrices needs to have the same dimension'):
         self.message = message
         super().__init__(self.message)
 
@@ -38,8 +40,8 @@ class MultiplicationMatrixError(Exception):
     '''
 
     def __init__(self,
-                 message='The first matrix needs to have the number of columns '
-                          'equals to the second matrix number of rows'):
+                 message='The first matrix needs to have the number of '
+                 'columns equals to the second matrix number of rows'):
         self.message = message
         super().__init__(self.message)
 
