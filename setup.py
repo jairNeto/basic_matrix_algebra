@@ -1,8 +1,7 @@
 from setuptools import setup
 
-setup(name='matrices',
-      version='0.1',
+setup(name='jair_matrices',
+      version='1.0',
       description='Matrix basic operation',
-      packages=['matrices'],
+      packages=['jair_matrices'],
       zip_safe=False)
-

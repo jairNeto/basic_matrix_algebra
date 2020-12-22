@@ -1,5 +1,5 @@
 ''' Matrix class '''
-from matrices.exceptions import DimensionMatrixError, \
+from jair_matrices.exceptions import DimensionMatrixError, \
     AddSubtractionMatrixError, MultiplicationMatrixError
 
 
