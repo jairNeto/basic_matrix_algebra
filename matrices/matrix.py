@@ -1,6 +1,6 @@
 ''' Matrix class '''
-from exceptions import DimensionMatrixError, AddSubtractionMatrixError, \
-    MultiplicationMatrixError
+from matrices.exceptions import DimensionMatrixError, \
+    AddSubtractionMatrixError, MultiplicationMatrixError
 
 
 class Matrix:
@@ -149,7 +149,3 @@ class Matrix:
                 trans_matrix[col][row] = self.matrix[row][col]
 
         return Matrix(trans_matrix)
-
-
-if __name__ == '__main__':
-    print(Matrix([]))
